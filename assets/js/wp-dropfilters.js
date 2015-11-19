@@ -14,7 +14,7 @@ jQuery( document ).ready( function ( $ ) {
 		var filters = toptablenav.find( '.actions:not(.bulkactions)' );
 
 		// Add a class for custom styling
-		filters.addClass( 'wp-pretty-filters' );
+		filters.addClass( 'wp-dropfilters' );
 
 		// Relocate
 		toptablenav.before( filters );

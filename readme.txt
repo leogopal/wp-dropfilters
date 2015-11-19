@@ -1,24 +1,22 @@
 === WP DropFilters ===
-Contributors: johnjamesjacoby, stuttter
+Contributors: leogopal
 Tags: jquery, select, chosen
 Requires at least: 4.3
 Tested up to: 4.4
-Stable tag: 0.1.3
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=9Q4F4EL5YJ62J
+Stable tag: 1.0.0
+Donate link: 
 
-Make long, unwieldy select boxes much more user-friendly.
+Improves long dropdowns and filters in WordPress Admin.
 
 == Description ==
 
-WP DropFilters plugin implements the [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) for WordPress.
+WP DropFilters makes using long dropdowns and filters in WordPress Admin a lot more pleasant.
 
-[Chosen](http://harvesthq.github.com/chosen/) makes long, unwieldy select boxes much more user-friendly.
+The [Chosen jQuery Plugin](http://harvesthq.github.com/chosen/) is used for the WordPress Admins long dropdowns and the Filter fields are tamed.
 
 
 == Screenshots ==
 
-1. Filters
-2. Timezones
 
 == Installation ==
 
@@ -28,35 +26,34 @@ WP DropFilters plugin implements the [Chosen jQuery Plugin](http://harvesthq.git
 
 == Frequently Asked Questions ==
 
-= What dropdowns does this target? =
+= What dropdowns does this target?
 
-`
+```
 $( '.wrap .actions:not(.bulkactions) select' ).chosen();
 $( '.wrap .form-table select' ).chosen();
 $( '#posts-filter .filter-items select' ).chosen();
-$( '.media-toolbar select' ).chosen();
-`
+```
 
-= Where can I get support? =
+= What filters are targeted?
 
-The WordPress support forums: https://wordpress.org/support/plugin/wp-chosen/
+```
+ #posts-filter .tablenav.top .actions:not(.bulkactions)
+```
 
-= Where can I find documentation? =
+= Where can I get support?
 
-http://github.com/stuttter/wp-chosen/
+The WordPress support forums: [https://wordpress.org/plugin/support/wp-dropfilters/](https://wordpress.org/plugin/support/wp-dropfilters/)
+
+= Report Bugs or Request Features?
+
+Please do so on the Github Issue Tracker: [Submit Bug or Feature Request](https://github.com/leogopal/wp-dropfilters/issues/new)
+
+= Can I contribute?
+
+Yes, please! You can find [WP DropFilters repository on Github](https://github.com/leogopal/wp-dropfilters)
+Hat Tip to [John James Jacoby](https://profiles.wordpress.org/johnjamesjacoby/) for the original thoughts.
 
 == Changelog ==
 
-= 0.1.3 =
-* Version JS
-* Add support for media
-
-= 0.1.2 =
-* Update styling
-* Target media library
-
-= 0.1.1 =
-* Fix drop-down search input styling
-
-= 0.1.0 =
+= 1.0.0 =
 * Initial release
