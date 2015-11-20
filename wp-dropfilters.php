@@ -22,16 +22,16 @@ function _wp_dropfilters() {
 	$ver = wp_dropfilters_get_asset_version();
 
 	// Styles
-	wp_enqueue_style( 'chosen',     $url . 'assets/css/chosen.min.css', array(),           $ver );
-	wp_enqueue_style( 'wp-dropfilters',  $url . 'assets/css/wp-dropfilters.css',  array( 'chosen' ), $ver );
+	wp_enqueue_style('chosen', $url . 'assets/css/chosen.min.css', array(), $ver);
+	wp_enqueue_style('wp-dropfilters', $url . 'assets/css/wp-dropfilters.css', array('chosen'), $ver);
 
 	// Scripts
-	wp_enqueue_script( 'chosen',    $url . 'assets/js/chosen.jquery.min.js', array( 'jquery'           ), $ver, true );
-	wp_enqueue_script( 'wp-dropfilters', $url . 'assets/js/wp-dropfilters.js',         array( 'chosen', 'jquery' ), $ver, true );
+	wp_enqueue_script('chosen', $url . 'assets/js/chosen.jquery.min.js', array('jquery'), $ver, true);
+	wp_enqueue_script('wp-dropfilters', $url . 'assets/js/wp-dropfilters.js', array('chosen', 'jquery'), $ver, true);
 
 }
 
-add_action( 'admin_enqueue_scripts', '_wp_dropfilters' );
+add_action('admin_enqueue_scripts', '_wp_dropfilters');
 
 /**
  * Return the plugin's URL
@@ -41,7 +41,7 @@ add_action( 'admin_enqueue_scripts', '_wp_dropfilters' );
  * @return string
  */
 function wp_dropfilters_get_plugin_url() {
-	return plugin_dir_url( __FILE__ );
+	return plugin_dir_url(__FILE__);
 }
 
 /**
